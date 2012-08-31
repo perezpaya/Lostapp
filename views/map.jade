@@ -1,0 +1,22 @@
+append block head
+	script(type="text/javascript")
+		var lat = #{lat};
+		var lon = #{lon};
+		$(document).ready(function (){
+			var point = new google.maps.LatLng(lat,lon);  
+			var myOptions = {
+				zoom: 20,
+				center: point,
+				mapTypeId: google.maps.MapTypeId.HYBRID
+			};
+			var map = new google.maps.Map(document.getElementById("satellite"), myOptions);
+			var marker = new google.maps.Marker({
+				position: point, 
+				map: map, 
+				title:"Username"
+			});
+		});
+
+h1 Bienvenido: #{name}
+img(src="#{url}")
+div.map#satellite(style="width=500px; height: 500px;")

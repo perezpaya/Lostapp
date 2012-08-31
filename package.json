@@ -1,0 +1,13 @@
+{
+	"name": "iamlost",
+	"version": "0.0.1",
+	"dependencies": {
+		"express": "latest",
+		"jade": "latest",
+		"socket.io": "latest",
+		"mongoose": "lastest",
+		"gravatar": "lastest",
+		"nodemailer": "lastest",
+		"forever": "lastest"
+	}
+}

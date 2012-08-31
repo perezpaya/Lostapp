@@ -1,0 +1,7 @@
+h1 Por favor introduce un nombre de usuario
+form(method="post", action="/user", style="padding: 2px 0 5px 0")
+    input(type="text", name="user", placeholder="Usuario", required)
+    span &nbsp;
+    button(onclick="post()", class="inset red")
+        span(class="icon medium grey", data-icon="U")
+        span Representar
